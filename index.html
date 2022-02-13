@@ -1,0 +1,25 @@
+
+        <body style="background-color: #EBEBEB">
+            <div style="margin-top:200px;height:30px;text-align:center;font-size:20px;">
+                邀请码
+            </div>
+            <div style="margin-top:20px;text-align:center;font-weight:bold;font-size:24px;">
+                <input type="text" id="copy_value" value="DJXE5Y2A" style="border-radius: 4px;padding:10px 10px;font-size:24px;border:none;">
+            </div>
+
+            <div id="copy_btn" data-clipboard-text="DJXE5Y2A" style="margin:40px auto;height:40px; text-align:center;height:40px; width:80%;background-color:#1166B8;color:#FFFFFF;border: 0;border-radius: 4px;padding:5px 30px;font-size:20px;">
+                复  制
+            </div>
+        </body>
+        <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+        <script type="text/javascript">
+            var clipboard = new ClipboardJS('#copy_btn');
+            clipboard.on('success', function(e) {
+                alert("复制成功!");
+                e.clearSelection();
+                window.location.href=""
+            });
+            clipboard.on('error', function(e) {
+                alert("复制失败!");
+            });
+        </script>
